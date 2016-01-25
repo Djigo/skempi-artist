@@ -1,0 +1,1191 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+     box-sizing: border-box;
+    outline: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+      font-family: 'Francois One', sans-serif;
+    font-weight:400;
+}
+
+
+header h1{
+    color:#24a4e4;
+    margin-top:0px;
+    margin-bottom:5px;
+    text-align: center;
+}
+
+header p{
+    color:#434343;
+    text-align: center;
+    margin: 0 0 30px;
+}
+
+a{
+    cursor: pointer;
+}
+
+body{
+    background: url('../img/bg.jpg') no-repeat;
+}
+
+a.logo{
+    width:120px;
+    position:absolute;
+    top:15px;
+    left:20px;
+}
+
+.logo img{
+    width:120px;
+}
+
+.navbar{
+    /*position: relative;*/
+    padding: 0 0 20px 0px;
+    min-height: 50px;
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+    background:none;
+    color:#fff; 
+    width:200px;
+    position:fixed;
+}
+
+.landing .navbar{
+    margin-top: 20px;
+}
+
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li.active > a{
+    color:#fff;
+    margin:0px 0px;
+    padding:25px 0px 25px 30px;
+    padding-bottom:2px;
+    background: none;
+    position:relative;
+    
+}
+
+.navbar-default .navbar-nav > li > a:active,
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li.active > a{
+    background: none;
+    color:#fff;
+}
+
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus{
+    background:none;
+    color:#fff;
+    border-bottom:1px solid #fff;
+}
+
+.navbar-default .navbar-nav > li > a > .glyphicon{
+    position:absolute;
+    left:0px;
+    top:23px;
+    font-size: 25px;
+}
+
+.navbar-brand {
+    padding: 0px 40px 0px 40px;
+    height:125px;
+}
+
+.navbar-brand > img {
+    display: block;
+    width: 100px;
+}
+
+.logout{
+    position:fixed;
+    right:40px;
+    top:0px;
+    color:#fff;
+    font-size:14px;
+    padding-left: 50px;
+    padding: 25px 0px 25px 30px;
+}
+.logout .glyphicon{
+    position:absolute;
+    left:0px;
+    top:23px;
+font-size: 25px;}
+
+.logincontainer{
+    width:800px;
+    top:68%;
+    left:50%;
+    position:absolute;
+    margin-left:-400px;
+    margin-top: -292px;
+    max-height: 420px;
+    min-height: 420px;
+    display:block;
+}
+
+
+
+.logincontainer h1{
+    text-align: center;
+    color:#fff;
+    font-size:48px;
+    margin-bottom: 30px;
+}
+
+.logincontainer .terms{
+  font-size:  12px;
+  color:#fff;  
+    text-align: center;
+    width:380px;
+    margin:0 auto;
+}
+
+.logincontainer .terms a{
+  font-size:  12px;
+  color:#fff; 
+text-decoration: underline;
+}
+
+.signup{
+    width:400px;
+    height:75px;
+    background:#fff;
+    color:#24a4e4;
+    border-bottom:3px solid #24a4e4;
+    border-radius: 8px;
+    display: block;
+    margin:0 auto;
+    padding-left:95px;
+    position:relative;
+    font-size: 30px;
+    line-height: 75px; 
+    cursor: pointer;
+    margin-bottom:70px;
+}
+
+.signup:hover,
+.signup:active,
+.signup:focus{
+    text-decoration: none;
+    color:#24a4e4;
+}
+
+.signup:active{
+    background: #eee;
+}
+
+.signup img{
+    position:absolute;
+    width:75px;
+    height:75px;
+    left:10px;
+    top:0px;
+}
+
+/* ----- Artistsignup -----*/
+
+.wrapper{
+    width:815px;
+    height:600px;
+    display:block;
+    background:#fff;
+    border-radius: 0px;
+    padding:25px;
+    margin-bottom: 80px;
+    margin: 20px auto 20px 210px;
+    position:relative;
+}
+
+.wrapper.long{
+    height:auto;
+    max-height: none;
+}
+
+
+.wrapper form{
+    padding:0px 15px;
+}
+
+.wrapper form div{
+    width:100%;
+    display:block;
+    margin: 0px 0px 15px 0px;
+    font-family: "Open Sans",sans-serif;
+    color:#434343;
+}
+
+.wrapper form div span{
+    display:block;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.wrapper form div span.checkbox{
+    display:inline-block;
+}
+
+.wrapper form input{
+    border:1px solid #24a4e4;
+    border-radius: 3px;
+    font-size:16px;
+    padding:5px 10px;
+    color:#434343;
+    margin-right: 20px;
+    width:330px;
+    display: inline-block;
+}
+
+.wrapper form input.error{
+    border:1px solid #f00;
+}
+
+.wrapper form select{
+    border:1px solid #24a4e4;
+    border-radius: 3px;
+    font-size:16px;
+    padding:5px 10px;
+    color:#434343;
+    margin-right: 20px;
+    width:90px;
+    display: inline-block;
+    height:34px;
+}
+
+.wrapper form input.checkbox{
+  width:20px;
+    margin-right:5px;
+}
+
+.wrapper form p{
+    border-radius: 3px;
+    font-size:11px;
+    padding:5px;
+    color:#7f7f7f;
+    display:block;
+    margin:0;
+}
+
+.wrapper form textarea{
+    border:1px solid #bbb;
+    border-radius: 3px;
+    width:400px;
+    margin-top:5px;
+    padding:5px;
+    color:#434343;
+}
+
+.wrapper .item{
+    background: #24a4e4 none repeat scroll 0% 0%;
+    font-weight: 400;
+    text-shadow: none;
+    height: 40px;
+    line-height: 55px;
+    font-size: 30px;
+    text-align: center;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 38px;
+    width:400px;
+    height:55px;
+    display:block;
+    margin:0 auto;
+    position:relative;
+    cursor: pointer;
+    border-bottom:3px solid #eee;
+    margin-bottom:40px;
+}
+
+
+.wrapper .complete{
+    background: #24a4e4 none repeat scroll 0% 0%;
+    font-weight: 400;
+    text-shadow: none;
+    height: 40px;
+    line-height: 55px;
+    font-size: 24px;
+    text-align: center;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 5px;
+    width:300px;
+    height:55px;
+    display:block;
+    margin: 25px auto 0;
+    cursor: pointer;
+    border-bottom:3px solid #eee;
+
+}
+
+.wrapper .complete:hover{
+    background: #51B7EA;
+}
+
+/* ------ Begin Profile -----*/
+
+.profile{
+    margin-bottom:40px;
+}
+
+.profile .picture{
+    height:150px;
+    width:150px;
+    display:inline-block;
+border:1px solid #eee;
+    border-radius:3px;
+    margin:0 20px 0 0;
+    position: absolute;
+    left:0px;
+    top:0px;
+    background: #24a4e4;
+    overflow: hidden;
+    color:#fff;
+    text-align: center;
+    line-height: 130px;
+}
+
+.profile .picture .glyphicon{
+    display:block;
+    font-size:23px;
+    position: relative;
+    top:50px;
+}
+
+.profile .picture a{
+    height:148px;
+    width:148px;
+    display:block;
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    text-align: center;
+    color:#fff;
+    line-height: 308px;
+    text-indent: -9999px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.profile .picture a:hover{
+    text-decoration: none;
+    background: #51B7EA;
+    line-height: 130px;
+}
+
+.profile .picture:hover a{
+    display:block;
+    background-position:0px 0px;
+    text-indent: 0px;
+}
+
+.profile .picture img{
+    height:148px;
+    width:148px;
+}
+
+
+.profile .addbio{
+    display:inline-block;
+    width:100%;
+    height:160px;
+    border-radius:3px;
+    vertical-align: top;
+    padding:0 10px;
+    position: relative;
+       padding:0 0 0 180px;
+}
+
+.profile .addbio h2{
+    display: inline-block;
+    margin-top:15px;
+    margin-right: 10px;
+}
+
+.profile .addbio a{
+    font-size:14px;
+    color:#fff;
+    display: inline-block;
+    padding:0px;
+    border-radius: 3px;
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    text-decoration: underline;
+}
+
+.profile .addbio a.edit{
+    font-size:14px;
+    color:#24a4e4;
+    display: inline-block;
+    padding:10px;
+    position: relative;
+    top: -2px;
+}
+
+.profile .addbio a.cancel{
+    font-size:14px;
+    color:#24a4e4;
+    display: inline-block;
+    padding:10px;
+        position: relative;
+    top: -2px;
+
+}
+
+.profile .addbio a.save{
+    font-size:14px;
+    color:#fff;
+    display: inline-block;
+    padding:5px;
+    width:50px;
+    background: #3bb36c;
+    border-radius: 3px;
+    text-align: center;
+    position: relative;
+    top: -2px;
+    text-decoration: none;
+}
+
+.profile .addbio a.save:hover{
+text-decoration: none;
+}
+
+.profile .addbio a.hidden{
+    display:none;
+}
+
+
+.profile .addbio p{
+    font-size:14px;
+    display:block;
+    padding:10px;
+}
+
+.profile .addbio textarea{
+    font-size: 14px;
+    display: block;
+    padding: 10px;
+    position: relative;
+    top: 62px;
+    background: none;
+    resize: none;
+    top: -111px;
+    left: -1px;
+    width: 590px;
+    height: 180px;
+    border: 1px solid #eee;
+    background: #f9f9f9;
+}
+
+.profile .addbio .hidden{
+    display:none;
+}
+/* ------ End Profile -----*/
+
+
+/* ------ Begin Music -----*/
+
+.music{
+    min-height: 300px;
+    position: relative;
+}
+
+ .entrybox {
+    border: 0px solid #eee;
+    border-bottom: 1px solid #eee;
+    font-size: 11px;
+    line-height: 1.4em;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-transform: capitalize;
+    outline: none;
+    position: relative;
+    display: inline-block;
+     padding: 10px;
+     
+  }
+  .entrybox h2 {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .entrybox img, #tumblelog img {
+    display: block;
+  }
+  .entrybox .song img {
+    width: 50px;
+      height: 50px;
+  }
+  .entrybox .label {
+    background: none;
+    color: #aaa;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    text-shadow: none;
+    font-size: 10px;
+    height: 20px;
+    line-height: 22px;
+    display: block;
+    padding: 0 0 0 25px;
+  }
+
+.entrybox .position {
+    background: none;
+    color: #24a4e4;
+    font-weight: 400;
+    text-shadow: none;
+    font-size: 16px;
+    height: 40px;
+    width: 40px;
+    line-height: 50px;
+    display: block;
+    padding: 0 0 0 0px;
+      
+  }
+  .entrybox .position:hover {
+    text-decoration: none;
+  }
+  .entrybox .position .icon {
+    line-height: 40px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+      font-size: 18px;
+      color:#24a4e4;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 3px;
+    background: #fff;
+    border: 1px solid #fff;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+      font-weight: 600;
+  }
+
+  .entrybox .direction {
+    background: none;
+    color: #aaa;
+    font-weight: 400;
+    text-shadow: none;
+    font-size: 16px;
+    height: 10px;
+    width: 12px;
+    line-height: 50px;
+    display: block;
+    padding: 0 0 0 0px;
+    position:absolute;
+    right:10px;
+    bottom:83px;
+    background: transparent url("../img/skempi-spritemap.png") no-repeat scroll 30px -370px;
+  }
+
+    .entrybox .direction.up {
+      background-position: 0px -370px;
+    }
+
+    .entrybox .direction.down {
+      background-position: -20px -370px;
+    }
+
+  .entrybox .gotoalbum {
+    color: #24a4e4;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-shadow: none;
+    font-size: 10px;
+    line-height: 18px;
+    display: block;
+    padding: 0 0 0 0px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: underline;
+    background: #fff;
+    border-radius: 3px;
+    text-decoration: none;
+    border: 1px solid #24a4e4;
+    position: absolute;
+    bottom: 10px;
+    left: 70px;
+    width: 70px;
+  }
+  .entrybox:hover .gotoalbum, .entrybox.active .gotoalbum {
+    background: #fff;
+  }
+  .entrybox a.gotoalbum:hover {
+    background: #24a4e4;
+    color: #fff;
+  }
+  .entrybox a.gotoalbum:active {
+    width: 64px;
+    left: 73px;
+    line-height: 16px;
+    bottom: 11px;
+  }
+  .entrybox .gotoalbum .icon {
+    left: 95px;
+    top: -15px;
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    /*color: #ff9632;*/
+    /*border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 15px solid #ddd;*/
+    color: #ccc;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+  }
+  .entrybox:hover .gotoalbum .icon, .entrybox.active .gotoalbum .icon {
+    border-bottom-color: #fff;
+  }
+  .entrybox .gotoalbum:hover .icon {
+    border-bottom: 0px solid transparent;
+    top: 0px;
+  }
+  .entrybox .gotoalbum:hover .icon {
+    color: #fff;
+  }
+  .entrybox .delete {
+    font-weight: 400;
+    text-shadow: none;
+    font-size: 12px;
+    line-height: 10px;
+    display: block;
+    text-decoration: none;
+    cursor: default;
+    background: #fff;
+    color: #f00;
+      border:1px solid #f00;
+    padding: 5px;  
+    border-radius: 3px;
+  }
+  .entrybox .status {
+    background: none;
+    color: #434343;
+    font-weight: 400;
+    text-shadow: none;
+    font-size: 14px;
+    height: 10px;
+    line-height: 10px;
+    display: block;
+    padding: 0 0 0 15px;
+    text-decoration: none;
+    cursor: default;
+  }
+
+.entrybox .status.published {
+    color:#3bb36c;
+}
+
+  .entrybox .delete .icon {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 10px;
+    height: 10px;
+    background: url("../img/skempi-spritemap.png") no-repeat scroll -50px -860px transparent;
+  }
+  .entrybox .status .icon {
+    position: absolute;
+    right: -5px;
+    top: 10px;
+    width: 10px;
+    height: 10px;
+    font-weight: 900;
+    color: #434343;
+  }
+  .entrybox .song {
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    background: none;
+    height: 250px;
+    width: 100%;
+  }
+  .entrybox .song img {
+    border: none;
+  }
+  .entrybox .song .username {
+    background: #fff;
+    color: #767676;
+    font-size: 10px;
+    width: 120px;
+    height: 20px;
+    position: relative;
+    top: -20px;
+  }
+  .entrybox:hover .song .username {
+    background: #3bb36c;
+    color: #fff;
+  }
+
+
+.col1 {
+    width: 100%;
+    height: 70px;
+    position: relative;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    border: 0px solid #eee;
+    border-top: 1px solid #eee;
+    border-bottom: 0px solid #eee;
+    margin:0 0 0px 0;
+  }
+
+.col1.addmusic{
+    border:0px solid #eee;
+}
+
+.col1.addmusic .add{
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    line-height: 50px;
+    text-transform: none;
+    color:#fff;
+    border-radius: 3px;
+    background: #3bb36c;
+    height:50px;
+    position: absolute;
+    left:10px;
+    top:10px;
+    padding:0 10px;
+}
+
+
+.col1.addmusic:hover .add{
+}
+.col1.addmusic .add:hover{
+text-decoration: none;
+background:#59c886;
+}
+
+.col1.addmusic .add .glyphicon{
+    font-size: 22px;
+    position: relative;
+    top:4px;
+}
+
+ .col1 .song {
+    overflow: hidden;
+    display: inline-block;
+    background: none;
+    height: 100%;
+  }
+  .col1 .song .container {
+    display: block;
+    width: 100%;
+    border-left: none;
+    padding-top: 0px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+    overflow: hidden;
+    padding: 0px 0 0 60px;
+  }
+  .col1 .label {
+    display: none;
+  }
+
+.col1 .albumart {
+    position: absolute;
+    left:0px;
+    top:0px;
+}
+
+  .col1 .song .playbtn {
+    transition: width 0.0s;
+    -webkit-transition: width 0.0s;
+    /* Safari */
+    background: url("../img/skempi-spritemap.png") no-repeat scroll -320px -770px transparent;
+    height: 50px;
+    width: 50px;
+    left: 10px;
+    position: absolute;
+    top: 10px;
+    z-index: 20;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+  }
+  .col1 .song .playbtn:hover {
+    background-position: -320px -570px;
+  }
+  .col1 .song .playbtn.active {
+    background-position: -570px -770px;
+    z-index: 20;
+  }
+  .col1 .song .playbtn.active:hover {
+    background-position: -570px -570px;
+    z-index: 20;
+  }
+  .col1 .delete {
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+  }
+  .col1 .status {
+    margin-right: 0px;
+    background: url("../img/skempi-spritemap.png") repeat-x scroll -225px -190px transparent;
+    height: 50px;
+    margin-right: 0px;
+    display: inline-block;
+    cursor: pointer;
+    padding: 0px;
+    line-height: 50px;
+    border-radius: 3px;
+    text-transform: none;
+    vertical-align: top;
+  }
+  .col1 .status:hover {
+    background-position: -255px -160px;
+  }
+  .col1 .status.respected {
+    background-position: -255px -160px;
+  }
+  .col1 .status:active {
+    background-position: -255px -190px;
+  }
+  .col1 .song .title {
+    transition: all 0.0s;
+    -webkit-transition: all 0.0s;
+    /* Safari */
+    background: none;
+    color: #434343;
+    font-size: 14px;
+    width: 300px;
+    display: inline-block;
+    text-align: left;
+    overflow: hidden;
+    height:50px;
+      
+      
+  }
+  .col1 .song .title.active {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+  }
+  .col1 .song .playbtn .title a {
+    display: block;
+    padding: 0px 5px 0px 5px;
+    line-height: 16px;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+  }
+  .col1 .song .title .albumname {
+    color: #24a4e4;
+    display: block;
+    line-height: 50px;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 10px;
+    overflow: visible;
+    border-radius: 0 3px 3px 0px;
+    white-space: normal;
+    text-overflow: clip;
+    font-size:14px;  
+  }
+  .col1 .song .title .albumname:hover {
+    text-decoration: underline;
+  }
+  .col1 .song .title .artistname {
+    color: #434343;
+    line-height: 18px;
+    font-size: 13px;
+    overflow: hidden;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    width: auto;
+    display: inline-block;
+    margin: 0 10px 0 0px;
+    padding: 0px 10px 0px 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    position: relative;
+    top: -1px;
+  }
+
+.col1 .edit{
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    line-height: 30px;
+    text-transform: none;
+    color:#fff;
+    border-radius: 3px;
+    background: #3bb36c;
+    height:30px;
+    position: absolute;
+    right:0px;
+    top:10px;
+    padding:0px 10px;
+}
+
+.col1 .edit:hover{
+background: #59c886;
+}
+.col1:hover .edit{
+}
+.col1 .edit:hover{
+text-decoration: none;
+}
+
+.col1 .edit .glyphicon{
+    font-size: 16px;
+    position: relative;
+    top:2px;
+}
+
+  .col1.sticker:hover .song .title .albumname {
+    color: #24a4e4;
+  }
+  .col1.sticker:hover .song .title .artistname {
+    color: #bbb;
+  }
+  .col1 .song .title a.artistname:hover, .col1 .song .title a.artistname:hover {
+    text-decoration: underline;
+  }
+  .col1 .song .title.active .albumname, .col4 .song .title.active .artistname {}
+  .col1 .song:hover .title, .col4 .song .title.active {
+    margin: 0 0 0 0px;
+  }
+
+.col1:hover {
+    z-index: 10;
+  }
+  .col2:hover {
+    z-index: 10;
+  }
+  .col3:hover, .col4:hover {
+    z-index: 10;
+  }
+  .col1 img {
+    width:50px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    opacity: 1;
+  }
+  .col1 .albumart img {
+    border: 1px solid #eee;
+    border-radius: 3px;
+  }
+  .col1.colmobile {}
+  .col1.colmobile img {
+    opacity: 1;
+  }
+  .col1.active .albumart img {
+    opacity: 0.9;
+  }
+  .col1 .progress img {
+    border-radius: 105px;
+    width: 0px;
+    top: 115px;
+    left: 115px;
+    border: 1px solid #eee;
+    transition: all 1s;
+  }
+  .col1.active .progress img {
+    -webkit-animation: spin 1s linear infinite;
+    -moz-animation: spin 1s linear infinite;
+    animation: spin 1s linear infinite;
+    border-radius: 105px;
+    width: 170px;
+    top: 20px;
+    left: 20px;
+    border: 1px solid #eee;
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  }
+  .col1:hover img {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+  }
+
+/* ------ End Music -----*/
+
+
+
+/* ------ Begin Progress Bar ----- */
+
+.uploadprogress .cancelupload{
+   width: 60px;
+    border-radius: 3px;
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+    color: #fff;
+    background: #24a4e4;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+div.uplprogress {
+    position:relative;
+    margin:40px auto 40px auto;
+    width:300px; height:300px;
+}
+.uplprogress canvas {
+    display: block;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.uplprogress span {
+    color:#3bb36c;
+    display:block;
+    line-height:300px;
+    text-align:center;
+    width:300px;
+    font-size:60px;
+    margin-left:5px;
+}
+
+input {
+    width: 200px;
+}
+
+span {
+  
+}
+
+  
+/* ----- End Progress bar ----- */
+    
+    
+/* ----- Begin Uploaded songs ----- */
+    .uploaded{
+        padding:0 0 0 265px;
+        position: relative;
+    }
+
+.uploaded .previewsong{
+    display:block;
+    padding: 0px 15px 0 105px;
+    height:90px;
+    position:relative;
+}
+
+.uploaded .previewsong .playbtn{
+    display:inline-block;
+    width:90px;
+    height:90px;
+    background: url('../img/skempi-artist-spritemap.png');
+    background-position:0px -600px;
+    position: absolute;
+    left:0px;
+    top:0px
+}
+
+.uploaded .previewsong .playbtn.active{
+    display:inline-block;
+    width:90px;
+    height:90px;
+    background: url('../img/skempi-artist-spritemap.png');
+    background-position:-250px -600px;
+}
+
+ .uploaded .albumart{
+    margin-bottom:40px;
+}
+
+.uploaded .picture{
+    height:250px;
+    width:250px;
+    display:inline-block;
+border:1px solid #eee;
+    border-radius:3px;
+    margin:0 20px 0 0;
+    overflow: hidden;
+    position:absolute;
+    top:0px;
+    left:0px;
+    background: #24a4e4;
+    background-position:0px 0px;
+    text-align: center;
+    color:#fff;
+    line-height: 220px;
+}
+
+.uploaded .picture .glyphicon{
+    font-size: 40px;
+    display:block;
+    position:relative;
+    top:90px;
+}
+
+
+.uploaded .picture a{
+    height:248px;
+    width:248px;
+    display:block;
+    background: ;
+    position:absolute;
+    bottom:0px;
+    left:0px;
+    text-align: center;
+    color:#fff;
+    line-height: 508px;
+    text-indent: -9999px;
+    font-weight: 400;
+}
+
+.uploaded .picture a:hover{
+    text-decoration: none;
+    background: #51B7EA;
+    line-height: 220px;
+}
+
+.uploaded .picture:hover a{
+    display:block;
+    background-position:0px 0px;
+    text-indent: 0px;
+}
+
+.uploaded .picture img{
+    height:248px;
+    width:248px;
+}
+
+
+
+/* ------ End Artistsignup -----*/
+
+  .affix {
+      top:20px;
+      z-index: 9999 !important;
+      position:fixed;
+  }
+
+
+

@@ -1,0 +1,115 @@
+<!doctype HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Skempi Artists</title>
+    <link href='https://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='css/bootstrap.css' rel='stylesheet' type='text/css'>
+    <link href='css/style.css' rel='stylesheet' type='text/css'>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default" data-spy="affix" data-offset-top="0">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="profile.html"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Dongo</a></li>
+                    <li><a href="uploadprogress.html"><span class="glyphicon glyphicon-upload" aria-hidden="true"></span> Upload music</a></li>
+                    <li class=""><a href="#"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> What's Skempi? <span class="sr-only">(current)</span></a></li>
+                    <li>
+                        <a href="#"> <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Benefits</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+<a href="index.html" class="logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
+
+    <div class="wrapper long">
+        <header>
+            <h1>Your music has been uploaded</h1>
+            <p>Please verify the information below</p>
+        </header>
+        
+        
+
+        <div class="uploaded">
+            
+            
+            <div class="picture">
+                <span class="glyphicon glyphicon-picture"></span>
+                Upload cover art
+                <img src="img/blank1px.png">
+                <a href="#">
+                    <span class="glyphicon glyphicon-picture"></span>
+                Upload cover art</a>
+            </div>
+            <form>
+                <div class="previewsong">
+                <span>Preview</span>
+            <a class="playbtn"></a>
+                    <div class="trackprogress"></div>
+                <p>Dongo - No Bel Mi.mp3 (3.4 MB)</p>
+        </div>
+                
+                <div><span>Song title*</span>
+                    <input type="text" name="artistname">
+                    <p>Name of the song </p>
+                </div>
+
+                <div><span>Featuring artists</span>
+                    <input type="text" name="fullname">
+                    <p>Featuring artists seperated by commas</p>
+                </div>
+                <div><span>Genre*</span>
+                    <input type="text" name="email">
+                    <p>example: Hip Hop</p>
+                </div>
+                <div><span>Record label</span>
+                    <input type="text" name="email">
+                </div>
+                <div>
+                    <input class="checkbox" type="checkbox" name="email"><span class="checkbox">Explicit content</span>
+                </div>
+                <div><span>Release year</span>
+                    <select>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                    </select>
+                    <p></p>
+                </div>
+            </form>
+        </div>
+        <a href="upload-error.html" class="complete">Submit music</a>
+    </div>
+    </div>
+</body>
+
+
+</html>
